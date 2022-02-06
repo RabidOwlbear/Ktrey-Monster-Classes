@@ -6,21 +6,20 @@
   "version": "1.0.0",
   "minimumCoreVersion": "0.5.5",
   "compatibleCoreVersion": "9",
+  "scripts": ["./scripts/init.js", "./scripts/classData.js"],
   "packs": [
     {
-      "name": "items",
+      "name": "class-abilities",
       "label": "Monster Class Abilities",
       "path": "packs/items.db",
       "entity": "Item",
-      "type": "Item",
       "module": "ktrey-monster-classes"
     },
     {
-      "name": "items",
-      "label": "Monster Class Items",
-      "path": "packs/items.db",
-      "entity": "Item",
-      "type": "Item",
+      "name": "class-tables",
+      "label": "Monster Class Tables",
+      "path": "packs/rolltables.db",
+      "entity": "RollTable",
       "module": "ktrey-monster-classes"
     },
     {
@@ -28,7 +27,6 @@
       "label": "Monster Class Details",
       "path": "packs/journalentries.db",
       "entity": "JournalEntry",
-      "type": "JournalEntry",
       "module": "ktrey-monster-classes"
     }
   ],
