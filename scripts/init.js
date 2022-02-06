@@ -10,12 +10,12 @@ Hooks.once('OseCharacterClassAdded', async () => {
   const classObj = await game.settings.get('OSE-CharacterBuilder', 'characterClasses');
   console.log(classObj)
   classObj.ktmc = {
-    name: 'Ktrey Monster Class Options',
+    name: 'Ktrey',
     header: true,
     pack: 'ktrey-monster-classes.class-abilities',
     options: [
       {
-        name: 'Ktrey Monster Classes',
+        name: 'Monster Classes',
         classes: KTMC.data,
         pack: 'ktrey-monster-classes.class-abilities',
         source: 'ktmc'
